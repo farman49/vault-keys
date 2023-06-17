@@ -15,9 +15,11 @@ output "access_key" {
 }
 
 output "secret_key" {
-  value = aws_iam_access_key.test.secret
+  value     = aws_iam_access_key.test.secret
   sensitive = true
 }
+
 output "sensitive_secret_key" {
-  value = aws_iam_access_key.test.secret
+  value     = aws_iam_access_key.test.secret
+  sensitive = true
 }
